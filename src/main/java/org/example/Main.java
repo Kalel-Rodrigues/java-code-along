@@ -2,6 +2,29 @@ package org.example;
 
 class WeatherData {
     // TODO: implement the WeatherData class (see Exercise 2)
+    private String date;
+    private double temperature;
+    private double humidity;
+
+    public WeatherData(String date, double temperature, double humidity) {
+        this.date = date;
+        this.temperature = temperature;
+        this.humidity = humidity;
+
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public double getTemperature() {
+        return temperature;
+    }
+
+    public double getHumidity() {
+        return temperature;
+    }
+
 }
 
 // This is the main class of our Weather Data Analyzer program
@@ -51,6 +74,14 @@ public class Main {
      */
     public static void basicDataTypesExercise() {
         // TODO: Declare and assign values to variables
+
+        int dayNumber = 12;
+        double temperature = 28.5;
+        String weatherDescription = "Sunny";
+
+        System.out.println("Day number: " + dayNumber);
+        System.out.println("Temperature: " + temperature);
+        System.out.println("Weather Description: " + weatherDescription);
     }
 
     /**
@@ -88,6 +119,10 @@ public class Main {
      */
     public static void createWeatherDataObject() {
         // TODO: Create a WeatherData object and print its values
+        WeatherData weatherData = new WeatherData("2026-08-15", 36.0, 75.0);
+        System.out.println("Date: " + weatherData.getDate());
+        System.out.println("Temperature: " + weatherData.getTemperature());
+        System.out.println("Humidity: " + weatherData.getHumidity());
     }
 
     /**
